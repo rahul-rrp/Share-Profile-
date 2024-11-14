@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal | Rahul Prajapati</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="DALL·E 2024-11-14 11.26.18 - A minimalist favicon design featuring a black, bold, and modern letter 'R' with clean lines, centered on a white square canvas. The letter 'R' is simp.webp" type="image/x-icon">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- /// wrapper starts /// -->
+    <div class="wrapper">
+        <div class="circle-top circle"></div>
+        <div class="circle-bottom circle"></div>
+
+        <!-- /// card starts /// -->
+        <div class="card">
+            <img src="IMG_20240610_100058.jpg" alt="user image">
+            <h2 class="user-name">Rahul Prajapati</h2>
+            <h3 class="user-designation">Website Developer</h3>
+
+            <div class="buttons-group">
+                <button id="share-btn" data-modal="profile-modal">
+                    <span class="icon">&#xf1e0;</span> <!-- Unicode for share icon -->
+                    Share My Profile
+                </button>
+            
+                <button id="follow-btn" data-modal="follow-modal">
+                    <span class="icon">&#xf234;</span> <!-- Unicode for follow icon -->
+                    Follow Me
+                </button>
+            </div>
+            
+        <!-- /// card ends /// -->
+    </div>
+    <!-- /// wrapper ends /// -->
+
+    <!-- /// profile Modal starts /// -->
+    <div class="modal" id="profile-modal">
+        <!-- modal header -->
+        <div class="modal-header">
+            <h2 class="modal-title">Share My Profile</h2>
+            <button id="share-btn">
+                <span class="icon">&#xf1e0;</span>
+                Share My Profile
+            </button>
+            
+        </div>
+
+        <!-- modal body -->
+        <div class="modal-body">
+            <h3>Share this via</h3>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100043451922505" id="facebook-icon" class="icon" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" />
+                </a>
+                <a href="https://twitter.com/rahulp3114" id="twitter-icon" class="icon" target="_blank">
+                    <img src="398c25a4436e5b8ca72f141084cdc66e.jpg" alt="Twitter Logo" />
+                </a>
+                <a href="https://www.instagram.com/rahul-rrp/" id="instagram-icon" class="icon" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/512px-Instagram_logo_2022.svg.png" alt="Instagram Logo" />
+                </a>
+                <a href="https://wa.me/919125744407?text=Hi%20Rahul" id="whatsapp-icon" class="icon" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" />
+                </a>
+                <a href="https://t.me/RahulPrajapati" id="telegram-icon" class="icon" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Logo" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /// profile Modal ends /// -->
+
+    <!-- /// follow Modal starts /// -->
+    <div class="modal" id="follow-modal">
+        <!-- modal header -->
+        <div class="modal-header">
+            <h2 class="modal-title">Github Profile</h2>
+            <div>
+                <i class="fa-solid fa-xmark modal-close" id="follow-modal-close"></i>
+            </div>
+        </div>
+
+        <!-- modal body -->
+        <div class="modal-body">
+            <h3>Check my Repositories</h3>
+
+            <div class="social-icons">
+                <a href="https://github.com/rahul-rrp" id="github-icon" class="icon" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo" />
+                </a>
+
+                <a href="https://github.com/rahul-rrp" id="follow-unfollow" target="_blank">
+                    Follow
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /// follow Modal ends /// -->
+
+    <!-- overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- custom script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
